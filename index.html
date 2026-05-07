@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAFURION — El Dragón del Abismo | Odisea Vikinga</title>
+    <meta name="description" content="Sumérgete en la leyenda de Fafurion, el dragón de los mares de Lineage II. Una experiencia medieval vikinga con tormentas, magia y batallas épicas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Spectral:ital,wght@0,300;0,400;0,700;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+    
+    <!-- Icons (FontAwesome or similar if needed, using custom SVGs/Runes for now) -->
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles (Rain/Mist) -->
+    <canvas id="fx-canvas"></canvas>
+
+    <!-- Overlay for lightning flashes -->
+    <div id="lightning-overlay"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="rune">ᚠ</span> FAFURION <span class="rune">ᚠ</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#lore">Historia</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#clans">Clanes</a></li>
+                <li><a href="#battles">Batallas</a></li>
+                <li><a href="#events">Eventos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="assets/hero.png" alt="Fafurion emergiendo del océano" class="parallax-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="FAFURION">FAFURION</h1>
+            <h2 class="subtitle">— EL DRAGÓN DEL ABISMO —</h2>
+            <p class="tagline">Cuando el océano ruge, los reinos tiemblan.</p>
+            <div class="scroll-indicator">
+                <span>Desliza para despertar al dragón</span>
+                <div class="arrow-down">ᛟ</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section id="lore" class="lore-section">
+        <div class="container">
+            <div class="section-title">
+                <span class="rune">ᚱ</span>
+                <h2>Saga de la Corrupción</h2>
+                <span class="rune">ᚱ</span>
+            </div>
+            <div class="lore-grid">
+                <div class="lore-text reveal-on-scroll">
+                    <p class="dropcap">E</p>
+                    <p>n los albores de los tiempos, antes de que los hombres tallaran sus primeros drakkares, Fafurion ya gobernaba las profundidades. Creado por Shilen como el guardián de los océanos, su aliento era la marea y su ira la tormenta.</p>
+                    <p>Pero la corrupción no nace en el abismo, sino en el corazón de los dioses. Tras las guerras ancestrales, Fafurion se sumergió en un sueño de milenios, alimentado por el odio y el rugido del mar agitado. Ahora, los barcos vikingos que osan cruzar sus dominios solo encuentran madera astillada y muerte.</p>
+                    <blockquote>"El agua no olvida. El dragón no perdona." — Leyenda Rúnica.</blockquote>
+                    <p>Hoy, el sello se ha roto. El océano se tiñe de un verde esmeralda antinatural y los cielos lloran fuego. Los reinos del norte tiemblan ante el despertar de la bestia que devora horizontes.</p>
+                </div>
+                <div class="lore-image reveal-on-scroll">
+                    <div class="image-frame">
+                        <img src="assets/battle.png" alt="Batalla naval épica">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visiones del Abismo</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-on-scroll">
+                    <img src="assets/hero.png" alt="Fafurion Awakening">
+                    <div class="item-info">
+                        <h3>El Despertar</h3>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll">
+                    <img src="assets/battle.png" alt="Storm Battle">
+                    <div class="item-info">
+                        <h3>Tormenta de Fuego</h3>
+                    </div>
+                </div>
+                <!-- More items will be added or repeated with different styles -->
+                <div class="gallery-item reveal-on-scroll">
+                    <div class="placeholder-img" style="background-color: #0a3d34;">
+                        <span>OCÉANOS OSCUROS</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal-on-scroll">
+                    <div class="placeholder-img" style="background-color: #001b2e;">
+                        <span>GUERREROS DEL NORTE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section id="social" class="social-section">
+        <div class="container">
+            <h3>Únete al Clan de Fafurion</h3>
+            <div class="social-links">
+                <a href="#" class="social-btn discord" title="Discord"><span class="icon">ᚦ</span></a>
+                <a href="#" class="social-btn twitch" title="Twitch"><span class="icon">ᚢ</span></a>
+                <a href="#" class="social-btn youtube" title="YouTube"><span class="icon">ᚫ</span></a>
+                <a href="#" class="social-btn twitter" title="X"><span class="icon">ᛉ</span></a>
+                <a href="#" class="social-btn instagram" title="Instagram"><span class="icon">ᛁ</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-runes">
+            <span>ᚠ</span><span>ᚢ</span><span>ᚦ</span><span>ᚨ</span><span>ᚱ</span><span>ᚲ</span><span>ᚷ</span><span>ᚹ</span>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2026 FAFURION — EL DRAGÓN DEL ABISMO. Inspirado en Lineage II y Mitología Nórdica.</p>
+            <p class="credits">Diseñado con fuego y tormentas por Antigravity</p>
+        </div>
+        <div class="footer-runes">
+            <span>ᚺ</span><span>ᚾ</span><span>ᛁ</span><span>ᛃ</span><span>ᛇ</span><span>ᛈ</span><span>ᛉ</span><span>ᛊ</span>
+        </div>
+    </footer>
+
+    <!-- Audio Player (Optional Ambient) -->
+    <div id="ambient-player" class="player-hidden">
+        <button id="toggle-audio">
+            <span class="music-icon">ᛗ</span>
+            <span class="music-text">Música Nórdica</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
